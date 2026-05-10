@@ -31,14 +31,16 @@
       box-sizing: border-box;
     }
 
-    .botao-imagem {
+    .botao-video {
       width: 100%;
       max-width: 640px;
       display: block;
       margin: 10px auto 25px auto;
+      overflow: hidden;
+      border-radius: 12px;
     }
 
-    .botao-imagem img {
+    .botao-video video {
       width: 100%;
       display: block;
     }
@@ -68,9 +70,12 @@
   <img src="topo01.png" alt="Tele Tudo" class="topo" />
 
   <div class="container">
-    <div class="botao-imagem">
+
+    <div class="botao-video">
       <a href="https://t.me/+pmyWDkQruhcyZWEx" target="_blank">
-        <img src="botao01.png" alt="Entrar no Telegram">
+        <video autoplay muted loop playsinline>
+          <source src="VID_20260510_100211.mp4" type="video/mp4">
+        </video>
       </a>
     </div>
 
@@ -83,6 +88,7 @@
         <img src="descobrir.png" alt="Descobrir">
       </a>
     </div>
+
   </div>
 
 </body>
