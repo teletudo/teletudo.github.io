@@ -31,14 +31,16 @@
       box-sizing: border-box;
     }
 
-    .botao-imagem {
+    .botao-video {
       width: 100%;
       max-width: 640px;
       display: block;
       margin: 10px auto 25px auto;
+      overflow: hidden;
+      border-radius: 12px;
     }
 
-    .botao-imagem img {
+    .botao-video video {
       width: 100%;
       display: block;
       border-radius: 12px;
@@ -70,9 +72,11 @@
 
   <div class="container">
 
-    <div class="botao-imagem">
+    <div class="botao-video">
       <a href="https://t.me/+pmyWDkQruhcyZWEx" target="_blank">
-        <img src="download_20260512_181433_0000.gif" alt="Entrar no Telegram">
+        <video autoplay muted loop playsinline>
+          <source src="VID_20260510_100211.mp4" type="video/mp4">
+        </video>
       </a>
     </div>
 
