@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grupos - Tele Tudo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tele Tudo - Grupos</title>
 
   <style>
     body {
@@ -27,43 +28,271 @@
       width: 100%;
       max-width: 600px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 0 20px 40px;
       box-sizing: border-box;
     }
 
-    .titulo {
+    .titulo-pagina {
       font-size: 22px;
       font-weight: bold;
-      margin: 20px 0 30px;
+      margin: 22px 0 8px;
+      text-transform: uppercase;
     }
 
-    .botao {
-      display: block;
+    .subtitulo {
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: bold;
+      margin: 0 0 22px;
+    }
+
+    .categoria {
+      text-align: left;
+      font-size: 17px;
+      font-weight: bold;
+      margin: 25px 0 10px;
+      padding: 8px 12px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .grupo-card {
       width: 100%;
-      max-width: 420px;
-      margin: 0 auto 15px;
-      padding: 16px;
-      background: #000;
+      background-color: #fff;
+      border-radius: 14px;
+      margin: 12px 0;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+    }
+
+    .grupo-img {
+      width: 82px;
+      height: 82px;
+      border-radius: 12px;
+      object-fit: cover;
+      flex-shrink: 0;
+      background-color: #eee;
+    }
+
+    .grupo-info {
+      flex: 1;
+      text-align: left;
+    }
+
+    .grupo-nome {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 0 8px;
+      line-height: 1.3;
+    }
+
+    .grupo-descricao {
+      font-size: 12px;
+      line-height: 1.4;
+      margin: 0 0 10px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .botao-acessar {
+      display: inline-block;
+      background-color: #ff1493;
       color: #fff;
       text-decoration: none;
-      border-radius: 12px;
-      font-size: 18px;
       font-weight: bold;
+      font-size: 13px;
+      padding: 9px 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    }
+
+    .botao-acessar:hover {
+      background-color: #e6007e;
+    }
+
+    .rodape-aviso {
+      width: 100%;
       box-sizing: border-box;
+      margin-top: 40px;
+      padding: 14px 18px;
+      background-color: rgba(255, 255, 255, 0.55);
+      border-top: 1px solid rgba(0, 0, 0, 0.18);
+      font-size: 10px;
+      line-height: 1.5;
+      color: #333;
+      text-align: left;
+    }
+
+    @media (max-width: 420px) {
+      .container {
+        padding: 0 12px 35px;
+      }
+
+      .grupo-card {
+        gap: 10px;
+        padding: 9px;
+      }
+
+      .grupo-img {
+        width: 74px;
+        height: 74px;
+      }
+
+      .grupo-nome {
+        font-size: 15px;
+      }
+
+      .botao-acessar {
+        font-size: 12px;
+        padding: 8px 13px;
+      }
+
+      .rodape-aviso {
+        font-size: 9px;
+        padding: 12px 14px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <img src="../topo01.png" alt="Tele Tudo" class="topo">
+  <img src="../topo01.png" alt="Tele Tudo" class="topo" />
 
   <div class="container">
-    <div class="titulo">Escolha uma categoria</div>
 
-    <a href="#" class="botao">GRUPOS VIP</a>
-    <a href="#" class="botao">CANAIS FREE</a>
-    <a href="#" class="botao">LISTA ATUALIZADA</a>
+    <h1 class="titulo-pagina">Escolha seu grupo</h1>
+
+    <p class="subtitulo">
+      🔥 Selecione uma categoria abaixo e acesse pelo Telegram.
+    </p>
+
+    <!-- CATEGORIA: AMADORES -->
+    <div class="categoria">Categoria: Amadores</div>
+
+    <div class="grupo-card">
+      <img src="img/amadores01.png" alt="Grupo Amadores" class="grupo-img">
+
+      <div class="grupo-info">
+        <p class="grupo-nome">Amadores Brasil</p>
+        <p class="grupo-descricao">Conteúdo adulto +18 com estilo amador.</p>
+
+        <a href="https://t.me/SEU_LINK_AQUI" target="_blank" class="botao-acessar">
+          Acessar grupo
+        </a>
+      </div>
+    </div>
+
+    <div class="grupo-card">
+      <img src="img/amadores02.png" alt="Grupo Amadores 2" class="grupo-img">
+
+      <div class="grupo-info">
+        <p class="grupo-nome">Amadores Selecionados</p>
+        <p class="grupo-descricao">Seleção de conteúdo adulto para maiores de 18 anos.</p>
+
+        <a href="https://t.me/SEU_LINK_AQUI" target="_blank" class="botao-acessar">
+          Acessar grupo
+        </a>
+      </div>
+    </div>
+
+    <!-- CATEGORIA: CUCKOLD -->
+    <div class="categoria">Categoria: Cuckold</div>
+
+    <div class="grupo-card">
+      <img src="img/cuckold01.png" alt="Grupo Cuckold" class="grupo-img">
+
+      <div class="grupo-info">
+        <p class="grupo-nome">Cuckold Brasil</p>
+        <p class="grupo-descricao">Categoria adulta +18 com temática cuckold.</p>
+
+        <a href="https://t.me/SEU_LINK_AQUI" target="_blank" class="botao-acessar">
+          Acessar grupo
+        </a>
+      </div>
+    </div>
+
+    <div class="grupo-card">
+      <img src="img/cuckold02.png" alt="Grupo Cuckold 2" class="grupo-img">
+
+      <div class="grupo-info">
+        <p class="grupo-nome">Cuckold Selecionados</p>
+        <p class="grupo-descricao">Grupo adulto voltado exclusivamente para maiores de idade.</p>
+
+        <a href="https://t.me/SEU_LINK_AQUI" target="_blank" class="botao-acessar">
+          Acessar grupo
+        </a>
+      </div>
+    </div>
+
+    <!-- CATEGORIA: NOVINHAS / TEENS +18 -->
+    <div class="categoria">Categoria: Novinhas/Teens +18</div>
+
+    <div class="grupo-card">
+      <img src="img/teens01.png" alt="Grupo Teens Mais 18" class="grupo-img">
+
+      <div class="grupo-info">
+        <p class="grupo-nome">Teens +18 Brasil</p>
+        <p class="grupo-descricao">Conteúdo adulto legal apenas com maiores de 18 anos.</p>
+
+        <a href="https://t.me/SEU_LINK_AQUI" target="_blank" class="botao-acessar">
+          Acessar grupo
+        </a>
+      </div>
+    </div>
+
+    <div class="grupo-card">
+      <img src="img/teens02.png" alt="Grupo Novinhas Mais 18" class="grupo-img">
+
+      <div class="grupo-info">
+        <p class="grupo-nome">Novinhas +18</p>
+        <p class="grupo-descricao">Categoria adulta +18 com participantes maiores de idade.</p>
+
+        <a href="https://t.me/SEU_LINK_AQUI" target="_blank" class="botao-acessar">
+          Acessar grupo
+        </a>
+      </div>
+    </div>
+
+    <!-- CATEGORIA: PROIBIDOS -->
+    <div class="categoria">Categoria: Proibidos</div>
+
+    <div class="grupo-card">
+      <img src="img/proibidos01.png" alt="Grupo Proibidos" class="grupo-img">
+
+      <div class="grupo-info">
+        <p class="grupo-nome">Proibidos +18</p>
+        <p class="grupo-descricao">Conteúdo adulto legal com temática mais ousada.</p>
+
+        <a href="https://t.me/SEU_LINK_AQUI" target="_blank" class="botao-acessar">
+          Acessar grupo
+        </a>
+      </div>
+    </div>
+
+    <div class="grupo-card">
+      <img src="img/proibidos02.png" alt="Grupo Proibidos 2" class="grupo-img">
+
+      <div class="grupo-info">
+        <p class="grupo-nome">Proibidos Selecionados</p>
+        <p class="grupo-descricao">Conteúdo adulto +18 permitido, legal e consensual.</p>
+
+        <a href="https://t.me/SEU_LINK_AQUI" target="_blank" class="botao-acessar">
+          Acessar grupo
+        </a>
+      </div>
+    </div>
+
   </div>
+
+  <footer class="rodape-aviso">
+    Conteúdo destinado exclusivamente para maiores de 18 anos. Todos os grupos listados são voltados para conteúdo adulto legal, consensual e permitido. Para acessar os grupos, é necessário ter o Telegram instalado no telefone. Ao entrar, você confirma que possui 18 anos ou mais.
+  </footer>
 
 </body>
 </html>
